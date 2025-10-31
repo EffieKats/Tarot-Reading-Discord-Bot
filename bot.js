@@ -84,3 +84,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Web server running on port ${PORT}`);
 });
+require('./server.js');
