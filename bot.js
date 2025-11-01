@@ -72,10 +72,11 @@ client.on("messageCreate", async (message) => {
 });
 
 client.login(TOKEN);
-// Tiny web server to keep bot awake on Replit
+
+// Tiny web server to keep bot awake on Koyeb
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send("🌙 TarotBot is awake and magical! 🔮✨");
@@ -84,4 +85,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Web server running on port ${PORT}`);
 });
-require('./server.js');
+
