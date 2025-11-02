@@ -1,12 +1,12 @@
-// bot.js — Discord tarot bot
+// bot.js — Discord tarot bot for Koyeb
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const fetch = require('node-fetch');
 const express = require('express');
 
-const TOKEN = process.env.TOKEN; // Discord bot token (set in Koyeb)
+const TOKEN = process.env.TOKEN;
 const PREFIX = '!';
 
-// --- Card emoji sets ---
+// --- Tarot emojis ---
 const MAJOR_EMOJIS = {
   "the fool": "🤡✨", "the magician": "🪄🔮", "the high priestess": "🌙🕯️", "the empress": "🌸👑",
   "the emperor": "🛡️👑", "the hierophant": "📜⛪", "the lovers": "💖💏", "the chariot": "🏎️🛡️",
@@ -15,79 +15,74 @@ const MAJOR_EMOJIS = {
   "the tower": "🏰⚡", "the star": "⭐🌊", "the moon": "🌙🦊", "the sun": "☀️🌻",
   "judgement": "📯🔔", "the world": "🌎🏆"
 };
-const SUIT_EMOJIS = { "swords": "🗡️", "cups": "🍷", "pentacles": "🪙", "wands": "🪄" };
+const SUIT_EMOJIS = { swords: "🗡️", cups: "🍷", pentacles: "🪙", wands: "🪄" };
 
-// --- Helper to assign emojis ---
 function getCardEmoji(name) {
   const n = name.toLowerCase();
   if (MAJOR_EMOJIS[n]) return MAJOR_EMOJIS[n];
-  if (n.includes("swords")) return SUIT_EMOJIS.swords;
-  if (n.includes("cups")) return SUIT_EMOJIS.cups;
-  if (n.includes("pentacles")) return SUIT_EMOJIS.pentacles;
-  if (n.includes("wands")) return SUIT_EMOJIS.wands;
+  for (const [suit, emoji] of Object.entries(SUIT_EMOJIS))
+    if (n.includes(suit)) return emoji;
   return "🔮";
 }
 
-// --- Discord client setup ---
+// --- Discord setup ---
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
 });
 
 client.once("ready", () => console.log(`💫 Logged in as ${client.user.tag}`));
 
-// --- Tarot card fetching ---
+// --- Tarot fetch ---
 async function fetchCards(n = 3) {
-  const url = `https://tarotapi.dev/api/v1/cards/random?n=${n}`;
-  const res = await fetch(url);
+  const res = await fetch(`https://tarotapi.dev/api/v1/cards/random?n=${n}`);
   const data = await res.json();
   return data.cards || [];
 }
 
 // --- Command handler ---
-client.on("messageCreate", async (message) => {
-  if (message.author.bot || !message.content.startsWith(PREFIX)) return;
+client.on("messageCreate", async (msg) => {
+  if (msg.author.bot || !msg.content.startsWith(PREFIX)) return;
 
-  const cmd = message.content.slice(PREFIX.length).trim().toLowerCase();
+  const cmd = msg.content.slice(PREFIX.length).trim().toLowerCase();
   const match = cmd.match(/^([1-5])card$/);
   if (!match) return;
   const n = parseInt(match[1]);
 
   try {
-    await message.channel.sendTyping();
+    await msg.channel.sendTyping();
     const cards = await fetchCards(n);
 
-    const embeds = cards.map((card) => {
-      const reversed = card.reversed ? " 🔄 Reversed" : "";
-      const title = `${getCardEmoji(card.name)} ${card.name}${reversed}`;
-      const meaning = card.reversed ? card.meaning_rev : card.meaning_up;
-      return new EmbedBuilder()
-        .setTitle(title)
-        .setDescription(meaning)
+    const embeds = cards.map((c) =>
+      new EmbedBuilder()
+        .setTitle(`${getCardEmoji(c.name)} ${c.name}${c.reversed ? " 🔄 Reversed" : ""}`)
+        .setDescription(c.reversed ? c.meaning_rev : c.meaning_up)
         .setColor(0x8a2be2)
-        .setFooter({ text: "🔮 Tarot Reading" });
-    });
+        .setFooter({ text: "🔮 Tarot Reading" })
+    );
 
-    await message.channel.send({
-      content: `✨ Your ${n}-card reading, ${message.member.displayName}! ✨`,
+    await msg.channel.send({
+      content: `✨ Your ${n}-card reading, ${msg.member.displayName}! ✨`,
       embeds,
     });
   } catch (err) {
-    console.error("Error:", err);
-    message.reply("Oops! Couldn’t fetch cards. Try again soon 💜");
+    console.error(err);
+    msg.reply("Oops! Couldn’t fetch cards. Try again later 💜");
   }
 });
 
-// --- Start Discord bot ---
 client.login(TOKEN);
 
-// --- Express server for uptime ---
+// --- Express keep-alive server ---
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.get("/", (req, res) => {
-  res.send("🌙 TarotBot is awake and magical! 🔮✨");
-});
+// Prevent multiple listens if Koyeb restarts process
+let serverStarted = false;
 
-app.listen(PORT, () => {
-  console.log(`🕯️ Web server running on port ${PORT}`);
-});
+if (!serverStarted) {
+  app.get("/", (_, res) => res.send("🌙 TarotBot is awake and magical! 🔮✨"));
+  app.listen(PORT, () => {
+    serverStarted = true;
+    console.log(`🕯️ Keep-alive server on port ${PORT}`);
+  });
+}
