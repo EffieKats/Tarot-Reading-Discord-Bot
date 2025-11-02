@@ -66,21 +66,22 @@ client.on("messageCreate", async (msg) => {
     const cards = drawCards(n);
 
     const embeds = cards.map((c) => {
-      const orientation = c.reversed ? "🔄 Reversed" : "✨ Upright";
-      const cleanName = c.name; // names from JSON are already clean
+  const orientation = c.reversed ? "🔄 Reversed" : "✨ Upright";
+  const cleanName = c.name;
 
-      return new EmbedBuilder()
-        .setTitle(`${getCardEmoji(cleanName)} ${cleanName} — ${orientation}`)
-        .setDescription(
-          `**Upright Meaning:** ${c.upright || "Not found"}\n` +
-          `**Reversed Meaning:** ${c.reversed || "Not found"}\n\n`
-        )
-        .addFields({
-          name: "General Reading",
-          value: c["General Reading"] || "Not found",
-        })
-        .setFooter({ text: "🔮 Tarot Reading" });
-    });
+  return new EmbedBuilder()
+    .setTitle(`${getCardEmoji(cleanName)} ${cleanName} — ${orientation}`)
+    .setDescription(
+      `**Upright Meaning:** ${c.upright || "Not found"}\n` +
+      `**Reversed Meaning:** ${c.reversedMeaning || c.reversed || c.reversed} || ${c.reversed} || ${c.reversed} || "Not found"}\n\n`
+    )
+    .addFields({
+      name: "General Reading",
+      value: c["General Reading"] || "Not found",
+    })
+    .setFooter({ text: "🔮 Tarot Reading" });
+});
+
 
     await msg.channel.send({
       content: `✨ Your ${n}-card reading, ${msg.member.displayName}! ✨`,
