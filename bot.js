@@ -86,3 +86,13 @@ client.on('messageCreate', async (message) => {
 
 // --- Login ---
 client.login(TOKEN);
+
+// Start a tiny web server
+app.get('/', (req, res) => {
+  res.send('Bot is awake 👑');
+});
+
+app.listen(PORT, () => {
+  console.log(`Web server running on port ${PORT}`);
+});
+
