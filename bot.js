@@ -25,7 +25,7 @@ function getCardEmoji(name) {
   const n = name.toLowerCase();
   if (MAJOR_EMOJIS[n]) return MAJOR_EMOJIS[n];
   for (const [suit, emoji] of Object.entries(SUIT_EMOJIS))
-    if (n.includes(suit)) return emoji;
+    if (n.toLowerCase().includes(suit)) return emoji;
   return "🔮";
 }
 
@@ -34,7 +34,7 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
 });
 
-client.once("ready", () => console.log(`💫 Logged in as ${client.user.tag}`));
+client.once("clientReady", () => console.log(`💫 Logged in as ${client.user.tag}`));
 
 // --- Helper: Draw random cards from local data ---
 function drawCards(n = 3) {
@@ -66,27 +66,30 @@ client.on("messageCreate", async (msg) => {
     const cards = drawCards(n);
 
     const embeds = cards.map((c) => {
-  const orientation = c.reversed ? "🔄 Reversed" : "✨ Upright";
-  const cleanName = c.name;
+      const isReversed = c.reversed;
+      const orientationText = isReversed ? "🔄 Reversed" : "✨ Upright";
 
-  return new EmbedBuilder()
-    .setTitle(`${getCardEmoji(cleanName)} ${cleanName} — ${orientation}`)
-    .setDescription(
-      `**Upright Meaning:** ${c.upright || "Not found"}\n` +
-      `**Reversed Meaning:** ${c.reversedMeaning || c.reversed || c.reversed} || ${c.reversed} || ${c.reversed} || "Not found"}\n\n`
-    )
-    .addFields({
-      name: "General Reading",
-      value: c["General Reading"] || "Not found",
-    })
-    .setFooter({ text: "🔮 Tarot Reading" });
-});
+      const uprightMeaning = c.upright || tarotData[c.name]?.upright || "Not found";
+      const reversedMeaning = c.reversed || tarotData[c.name]?.reversed || "Not found";
+      const generalReading = c["General Reading"] || tarotData[c.name]?.["General Reading"] || "Not found";
 
+      return new EmbedBuilder()
+        .setTitle(`${getCardEmoji(c.name)} ${c.name} — ${orientationText}`)
+        .setDescription(
+          `**Upright Meaning:** ${uprightMeaning}\n**Reversed Meaning:** ${reversedMeaning}`
+        )
+        .addFields({
+          name: "General Reading",
+          value: generalReading.length > 1024 ? generalReading.slice(0, 1020) + "…" : generalReading,
+        })
+        .setFooter({ text: "🔮 Tarot Reading" });
+    });
 
     await msg.channel.send({
       content: `✨ Your ${n}-card reading, ${msg.member.displayName}! ✨`,
       embeds,
     });
+
   } catch (err) {
     console.error(err);
     msg.reply("Oops! Couldn’t draw your cards. Try again later 💜");
@@ -98,8 +101,6 @@ client.login(TOKEN);
 // --- Express keep-alive server ---
 const app = express();
 const PORT = process.env.PORT || 8080;
-
-// Prevent multiple listens if Koyeb restarts process
 let serverStarted = false;
 
 if (!serverStarted) {
@@ -120,6 +121,4 @@ const fetchKeepAlive = async () => {
     console.error("⚠️ Keep-alive ping failed:", err.message);
   }
 };
-
-// Ping every 5 minutes
 setInterval(fetchKeepAlive, 5 * 60 * 1000);
