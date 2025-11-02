@@ -1,8 +1,8 @@
 // bot.js — Discord tarot bot for Koyeb
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const express = require('express');
-const fetch = require('node-fetch');
 const fs = require('fs');
+const fetch = require('node-fetch');
 
 // --- Load local tarot meanings ---
 const tarotData = JSON.parse(fs.readFileSync('./tarot_meanings.json', 'utf8'));
@@ -42,7 +42,7 @@ function drawCards(n = 3) {
   const drawn = [];
   while (drawn.length < n) {
     const randomName = allCards[Math.floor(Math.random() * allCards.length)];
-    const reversed = Math.random() < 0.5; // 50/50 chance reversed
+    const reversed = Math.random() < 0.5;
     drawn.push({
       name: randomName,
       reversed,
@@ -66,22 +66,19 @@ client.on("messageCreate", async (msg) => {
     const cards = drawCards(n);
 
     const embeds = cards.map((c) => {
-      const uprightMeaning = tarotData[c.name]?.upright || "Not found.";
-      const reversedMeaning = tarotData[c.name]?.reversed || "Not found.";
-      const generalReading = tarotData[c.name]?.["General Reading"] || "Not found.";
-
-      // Title shows upright or reversed drawn
       const orientation = c.reversed ? "🔄 Reversed" : "✨ Upright";
+      const cleanName = c.name; // names from JSON are already clean
 
       return new EmbedBuilder()
-        const cleanName = c.name.replace(/[-–—]\s*reversed/i, "").trim();
         .setTitle(`${getCardEmoji(cleanName)} ${cleanName} — ${orientation}`)
         .setDescription(
-          `**Upright Meaning:** ${uprightMeaning}\n\n` +
-          `**Reversed Meaning:** ${reversedMeaning}\n\n` +
-          `**General Reading:** ${generalReading}`
+          `**Upright Meaning:** ${c.upright || "Not found"}\n` +
+          `**Reversed Meaning:** ${c.reversed || "Not found"}\n\n`
         )
-        .setColor(c.reversed ? 0x4b0082 : 0x8a2be2)
+        .addFields({
+          name: "General Reading",
+          value: c["General Reading"] || "Not found",
+        })
         .setFooter({ text: "🔮 Tarot Reading" });
     });
 
@@ -101,7 +98,9 @@ client.login(TOKEN);
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+// Prevent multiple listens if Koyeb restarts process
 let serverStarted = false;
+
 if (!serverStarted) {
   app.get("/", (_, res) => res.send("🌙 TarotBot is awake and magical! 🔮✨"));
   app.listen(PORT, () => {
@@ -121,4 +120,5 @@ const fetchKeepAlive = async () => {
   }
 };
 
+// Ping every 5 minutes
 setInterval(fetchKeepAlive, 5 * 60 * 1000);
