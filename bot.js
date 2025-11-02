@@ -1,7 +1,11 @@
 // bot.js — Discord tarot bot for Koyeb
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
-const fetch = require('node-fetch');
 const express = require('express');
+const fetch = require('node-fetch');
+const fs = require('fs');
+
+// --- Load local tarot meanings ---
+const tarotData = JSON.parse(fs.readFileSync('./tarot_meanings.json', 'utf8'));
 
 const TOKEN = process.env.TOKEN;
 const PREFIX = '!';
@@ -32,11 +36,20 @@ const client = new Client({
 
 client.once("ready", () => console.log(`💫 Logged in as ${client.user.tag}`));
 
-// --- Tarot fetch ---
-async function fetchCards(n = 3) {
-  const res = await fetch(`https://tarotapi.dev/api/v1/cards/random?n=${n}`);
-  const data = await res.json();
-  return data.cards || [];
+// --- Helper: Draw random cards from local data ---
+function drawCards(n = 3) {
+  const allCards = Object.keys(tarotData);
+  const drawn = [];
+  while (drawn.length < n) {
+    const randomName = allCards[Math.floor(Math.random() * allCards.length)];
+    const reversed = Math.random() < 0.5;
+    drawn.push({
+      name: randomName,
+      reversed,
+      ...tarotData[randomName]
+    });
+  }
+  return drawn;
 }
 
 // --- Command handler ---
@@ -50,12 +63,16 @@ client.on("messageCreate", async (msg) => {
 
   try {
     await msg.channel.sendTyping();
-    const cards = await fetchCards(n);
+    const cards = drawCards(n);
 
     const embeds = cards.map((c) =>
       new EmbedBuilder()
         .setTitle(`${getCardEmoji(c.name)} ${c.name}${c.reversed ? " 🔄 Reversed" : ""}`)
-        .setDescription(c.reversed ? c.meaning_rev : c.meaning_up)
+        .setDescription(
+          c.reversed
+            ? `**Reversed Meaning:** ${c.meaning_rev}\n\n**General Reading:** ${c.general_reading}`
+            : `**Upright Meaning:** ${c.meaning_up}\n\n**General Reading:** ${c.general_reading}`
+        )
         .setColor(0x8a2be2)
         .setFooter({ text: "🔮 Tarot Reading" })
     );
@@ -66,7 +83,7 @@ client.on("messageCreate", async (msg) => {
     });
   } catch (err) {
     console.error(err);
-    msg.reply("Oops! Couldn’t fetch cards. Try again later 💜");
+    msg.reply("Oops! Couldn’t draw your cards. Try again later 💜");
   }
 });
 
