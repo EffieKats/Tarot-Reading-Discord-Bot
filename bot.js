@@ -86,3 +86,17 @@ if (!serverStarted) {
     console.log(`🕯️ Keep-alive server on port ${PORT}`);
   });
 }
+
+// --- Keep-alive self-ping system (for Koyeb) ---
+const fetchKeepAlive = async () => {
+  try {
+    const url = `https://${process.env.KOYEB_APP_NAME || 'your-app-name'}.koyeb.app/`;
+    await fetch(url);
+    console.log("🔁 Self-ping sent to keep bot awake");
+  } catch (err) {
+    console.error("⚠️ Keep-alive ping failed:", err.message);
+  }
+};
+
+// Ping every 5 minutes
+setInterval(fetchKeepAlive, 5 * 60 * 1000);
