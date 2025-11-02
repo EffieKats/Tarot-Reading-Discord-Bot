@@ -40,15 +40,22 @@ client.once("clientReady", () => console.log(`💫 Logged in as ${client.user.ta
 function drawCards(n = 3) {
   const allCards = Object.keys(tarotData);
   const drawn = [];
+
   while (drawn.length < n) {
     const randomName = allCards[Math.floor(Math.random() * allCards.length)];
-    const reversed = Math.random() < 0.5;
+    
+    // Coin flip per card
+    const isUpright = Math.random() < 0.5; // true = upright, false = reversed
+
     drawn.push({
       name: randomName,
-      reversed,
-      ...tarotData[randomName]
+      isUpright,
+      upright: tarotData[randomName].upright,
+      reversed: tarotData[randomName].reversed,
+      general: tarotData[randomName]["General Reading"],
     });
   }
+
   return drawn;
 }
 
@@ -66,21 +73,16 @@ client.on("messageCreate", async (msg) => {
     const cards = drawCards(n);
 
     const embeds = cards.map((c) => {
-      const isReversed = c.reversed;
-      const orientationText = isReversed ? "🔄 Reversed" : "✨ Upright";
-
-      const uprightMeaning = c.upright || tarotData[c.name]?.upright || "Not found";
-      const reversedMeaning = c.reversed || tarotData[c.name]?.reversed || "Not found";
-      const generalReading = c["General Reading"] || tarotData[c.name]?.["General Reading"] || "Not found";
+      const orientationText = c.isUpright ? "✨ Upright" : "🔄 Reversed";
 
       return new EmbedBuilder()
         .setTitle(`${getCardEmoji(c.name)} ${c.name} — ${orientationText}`)
         .setDescription(
-          `**Upright Meaning:** ${uprightMeaning}\n**Reversed Meaning:** ${reversedMeaning}`
+          `**Upright Meaning:** ${c.upright}\n**Reversed Meaning:** ${c.reversed}`
         )
         .addFields({
           name: "General Reading",
-          value: generalReading.length > 1024 ? generalReading.slice(0, 1020) + "…" : generalReading,
+          value: c.general.length > 1024 ? c.general.slice(0, 1020) + "…" : c.general
         })
         .setFooter({ text: "🔮 Tarot Reading" });
     });
