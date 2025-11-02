@@ -65,20 +65,24 @@ client.on("messageCreate", async (msg) => {
     await msg.channel.sendTyping();
     const cards = drawCards(n);
 
-    const embeds = cards.map((c) =>
-      new EmbedBuilder()
-        .setTitle(`${getCardEmoji(c.name)} ${c.name}${c.reversed ? " 🔄 Reversed" : ""}`)
+    const embeds = cards.map((c) => {
+      const uprightMeaning = tarotData[c.name]?.upright || "Not found.";
+      const reversedMeaning = tarotData[c.name]?.reversed || "Not found.";
+      const generalReading = tarotData[c.name]?.["General Reading"] || "General Reading: not found.";
+
+      return new EmbedBuilder()
+        .setTitle(`${getCardEmoji(c.name)} ${c.name} — ${c.reversed ? "🔄 Reversed" : "✨ Upright"}`)
         .setDescription(
-          c.reversed
-            ? tarotData[c.name]?.reversed || "Reversed Meaning: not found."
-            : tarotData[c.name]?.upright || "Upright Meaning: not found."
-)
-.addFields({
-  name: "General Reading",
-  value: tarotData[c.name]?.["General Reading"] || "General Reading: not found.",
-})
-.setFooter({ text: "🔮 Tarot Reading" })
-    );
+          `**Upright Meaning:** ${uprightMeaning}\n` +
+          `**Reversed Meaning:** ${reversedMeaning}`
+        )
+        .addFields({
+          name: "General Reading",
+          value: generalReading
+        })
+        .setColor(c.reversed ? 0x4b0082 : 0x8a2be2)
+        .setFooter({ text: "🔮 Tarot Reading" });
+    });
 
     await msg.channel.send({
       content: `✨ Your ${n}-card reading, ${msg.member.displayName}! ✨`,
