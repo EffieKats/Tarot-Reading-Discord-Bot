@@ -1,0 +1,392 @@
+{
+  "0. The Fool": {
+    "upright": "New beginnings, optimism, trust in life, innocence, spontaneity.",
+    "reversed": "Recklessness, hesitation, holding back, risk-taking.",
+    "General Reading": "This is where your adventure begins! The Fool knows he is on the right path, even if he does not know where it will lead.Be willing to take a risk, with the knowledge that every big leap forward may have its pitfalls and that setbacks are lessons that will guide you on your journey. Your intuition is always by your side, much like the little dog who walks with the Fool. Tune into its guidance and heed its messages as your own path to expanded consciousness unfolds."
+  },
+  "1. The Magician": {
+    "upright": "Manifestation, resourcefulness, power, inspired action.",
+    "reversed": "Manipulation, poor planning, latent talents.",
+    "General Reading": "You are the Magician, and the elemental ingredients you need to be creative are always at your fingertips! With clear intention and passion, you can connect to the divine and manifest your dreams into reality. This card is a reminder that you are more powerful than you know. Take action when inspired, and focus on keeping each element in balance in your life. When you take action on your dreams and desires, you create your world."
+  },
+  "2. The High Priestess": {
+    "upright": "Intuition, sacred knowledge, divine feminine, mystery, subconscious mind.",
+    "reversed": "Secrets, disconnected from intuition, withdrawal, superficiality.",
+    "General Reading": "Connecting to the divine is an internal process. Your intuitive, higher self can be channeled at any time by looking within. The High Priestess urges you to clear your mind and ask your heart for the answers you seek. The answers are already within you!"
+  },
+  "3. The Empress": {
+    "upright": "Femininity, beauty, nature, nurturing, abundance.",
+    "reversed": "Creative block, dependence on others, stagnation, smothering.",
+    "General Reading": "The Empress emanates a powerful energy of receiving rather than taking action. You can allow what is being birthed in your life to take its time without rushing or forcing it. The Empress is relaxed, trusting that her passion and creativity produces a powerful magnetism that attracts everything she desires."
+  },
+  "4. The Emperor": {
+    "upright": "Authority, establishment, structure, a father figure, stability.",
+    "reversed": "Domination, excessive control, rigidity, lack of discipline.",
+    "General Reading": "The connection to divine masculine energy in the Emperor card is what leads you to take action from a place of power rather than reacting from a place of fear. This requires having a healthy relationship to your masculine energy and taking up space. Connect to your inner authority, acknowledging ambition, drive, and power in a way that serves the greater good, not just yourself."
+  },
+  "5. The Hierophant": {
+    "upright": "Spiritual wisdom, religious beliefs, conformity, tradition, institutions.",
+    "reversed": "Rebellion, subversiveness, new approaches, unconventionality.",
+    "General Reading": "The path of learning is never complete. Remain open to new courses of study, and honor tradition while also forming your own unique set of beliefs and rituals. When you are ready to learn, be alert to the presence of a potential new teacher in your life. On the other hand, this teacher could be you, if you are in a position to share your wisdom with others."
+  },
+  "6. The Lovers": {
+    "upright": "Love, harmony, relationships, values alignment, choices.",
+    "reversed": "Disharmony, imbalance, misalignment of values, conflict.",
+    "General Reading": "You always have the choice to align with divine love by balancing masculine and feminine energy within yourself, and you can strive to ensure that this balance is reflected in your relationships. Choosing relationships with mutual respect and healthy communication will lead you to the highest expression of love you seek."
+  },
+  "7. The Chariot": {
+    "upright": "Control, willpower, victory, assertion, determination.",
+    "reversed": "Lack of control, aggression, obstacles, directionless.",
+    "General Reading": "You are embarking on an important journey or moving toward the next level of your life goals! The Chariot asks you to have a clear intention, focus, and a plan for action. Sheer determination alone isn’t enough to propel you toward success. Building a solid foundation and creating structure are both necessary steps before you can make big decisions. If you’re not sure what to tackle right now, listen to your intuition to guide you toward the next actionable steps."
+  },
+  "8. Strength": {
+    "upright": "Courage, persuasion, influence, compassion, inner strength.",
+    "reversed": "Self-doubt, weakness, insecurity, raw emotion.",
+    "General Reading": "You are stronger than you know! Life is full of challenges, but you can trust yourself to handle just about any situation that arises. Let the infinity symbol remind you that you are capable of overcoming struggles both internally and externally. Strength asks you to be present with your fears rather than pushing them down and move forward with courage even when your confidence wavers."
+  },
+  "9. The Hermit": {
+    "upright": "Soul-searching, introspection, being alone, inner guidance.",
+    "reversed": "Isolation, loneliness, withdrawal, lost your way.",
+    "General Reading": "Many people fear being alone, but spending time by yourself to explore your inner worlds empowers you to connect deeply to your inner truth. Listening to your inner wisdom by spending time in solitude is a necessary and healthy practice that will rejuvenate you. When it’s time to be with others again, you will feel your energy restored."
+  },
+  "10. Wheel of Fortune": {
+    "upright": "Good luck, karma, life cycles, destiny, a turning point.",
+    "reversed": "Bad luck, resistance to change, breaking cycles.",
+    "General Reading": "Cultivating a strong spiritual practice can ease negative moments, help us enjoy the positive moments, and empower us to navigate the uncertain and challenging moments in our lives. By understanding the cycles of life on a deeper level, we build our own strength and resilience. The Wheel of Fortune asks you to focus on what you can control in order to find peace within the uncertainty of change and to let go of anything you cannot control. By doing this, you open yourself up to fated events and meetings without forcing your fate. What is meant for you will not miss you!"
+  },
+  "11. Justice": {
+    "upright": "Fairness, truth, law, cause and effect, clarity.",
+    "reversed": "Dishonesty, unfairness, lack of accountability.",
+    "General Reading": "Justice asks you to use logic and remain objective, as this will help you uncover the truth within each situation. She indicates that positive outcomes in legal matters or unsettled interpersonal issues are inevitable; all you need to do is stay true to yourself and act with integrity. Have faith that imbalanced situations are now working out in your favor."
+  },
+  "12. The Hanged Man": {
+    "upright": "Pause, surrender, letting go, new perspectives.",
+    "reversed": "Delays, resistance, stalling, indecision.",
+    "General Reading": "During moments when no forward movement can be made, you have the opportunity to see your situation from a new perspective. Getting curious about what you can learn from this forced waiting period will lead to new spiritual insights. Surrender to what is happening, and find peace during moments of inactivity until the time is right for action and transformation."
+  },
+  "13. Death": {
+    "upright": "Endings, change, transformation, transition.",
+    "reversed": "Resistance to change, personal transformation delays.",
+    "General Reading": "Remember that life is a continuous cycle of death and rebirth, and that change is natural. Seasons shift, and you yourself shift and grow as you evolve along your personal path. Death asks you to surrender to this cycle and release the things in your life that have outlived their purposes. This isn’t an easy process, but take comfort in knowing that something more suited for the next phase of your life is coming to replace what has left."
+  },
+  "14. Temperance": {
+    "upright": "Balance, moderation, patience, purpose.",
+    "reversed": "Imbalance, excess, self-healing, discord.",
+    "General Reading": "When you are working toward achieving something in your life, you don’t have to do it alone! Call upon divine assistance for help, look for signs, and follow inspired guidance when those signs appear before you. Be flexible and take a moderate approach, trusting that the results you want will take time. Have patience as the universe goes to work to bring your desires into the physical realm."
+  },
+  "15. The Devil": {
+    "upright": "Bondage, addiction, materialism, playfulness.",
+    "reversed": "Freedom, release, restoring control, breaking chains.",
+    "General Reading": "The Devil comes as a gentle confrontation about self-destructive thoughts or behaviors. Using your intuition, ask yourself what unhealthy habits or coping mechanisms are present in your life. Identifying the fears that lead to self-sabotaging behavior doesn’t have to be a scary process. Instead, it can be illuminating, much like the Devil’s torch that lights the darkness of the card."
+  },
+  "16. The Tower": {
+    "upright": "Sudden change, upheaval, chaos, revelation.",
+    "reversed": "Personal transformation, fear of change, averting disaster.",
+    "General Reading": "The Tower signals sudden changes that are beyond your control, causing you to feel momentarily destabilized. The message this card offers is that you must persevere, since the aspects of your life that are being torn down are no longer serving you. There is a new way of thinking and being that wants to break through. These new structures will support your growth and expansion."
+  },
+  "17. The Star": {
+    "upright": "Hope, faith, purpose, renewal, spirituality.",
+    "reversed": "Lack of faith, despair, discouragement, disconnected.",
+    "General Reading": "The Star appears to lift your spirits after a time of painful or violent transformation, and she helps renew your faith and hope in the future. Allow this card to inspire you to get back into a state of creative flow by utilizing all of the gifts you have within you. Healing energy is present, both in body and spirit."
+  },
+  "18. The Moon": {
+    "upright": "Illusion, fear, anxiety, subconscious, intuition.",
+    "reversed": "Release of fear, unhappiness, confusion cleared.",
+    "General Reading": "The Moon reveals aspects of your shadow self, illuminating your dark, self-defeating, and negative traits. This card presents the duality of human nature in its most primal form, as well as highlighting the urge for evolution. By opening yourself up to expanding your consciousness, you are forced to see what has been previously hidden. Do you want to evolve along your spiritual path or remain in the dark, where it feels safe? The Moon shows you where the work can be done, through dreams and developing your intuition. Even in the dark, there is nothing to fear!"
+  },
+  "19. The Sun": {
+    "upright": "Positivity, fun, warmth, success, vitality.",
+    "reversed": "Temporary depression, lack of success, negativity.",
+    "General Reading": "Seeing the world through the eyes of a child, or connecting to your own inner child, is a rewarding and productive use of this card’s energy. The Sun offers clarity in murky situations and brings you the experience of renewed vitality and conscious understanding. Improved health is on the way, as well as a return of your enthusiasm for life."
+  },
+  "20. Judgement": {
+    "upright": "Judgement, rebirth, inner calling, absolution.",
+    "reversed": "Self-doubt, refusal of self-examination, stagnation.",
+    "General Reading": "The process of releasing judgment of yourself is important, whether or not a spiritual awakening is taking place. In order to move forward in life, you have to be willing to accept and release your past so you are able to enjoy the next phase of life, whatever it may hold. Judgment contains all the elements of the cycle of surrender-release-forgive, which, taken together, allows you to move on from the past and into a more vibrant future."
+  },
+  "21. The World": {
+    "upright": "Completion, integration, accomplishment, travel.",
+    "reversed": "Lack of closure, incompleteness, no travel plans.",
+    "General Reading": "The World signifies the end of a cycle and reminds you that when you complete a project, you experience the rewards of your efforts. Celebrate your wins, and acknowledge how far you’ve come. There is excitement around what is yet to come, and you are now ready to begin a new journey from a place of empowerment and maturity."
+  },
+  "Ace of Wands": {
+    "upright": "Inspiration, new opportunities, growth, potential.",
+    "reversed": "Delays, lack of motivation, weighed down.",
+    "General Reading": "When the Ace of Wands appears, it brings flashes of inspiration that guide you toward beginning a new adventure. This may manifest as creating a new project, traveling, beginning a new relationship, or starting a business. This exciting energy is merely the first step, offering the drive and motivation you need to get moving on your path. Stay open to signs from the universe and take action when they appear!"
+  },
+  "Two of Wands": {
+    "upright": "Future planning, progress, decisions, discovery.",
+    "reversed": "Fear of unknown, lack of planning, overwhelmed.",
+    "General Reading": "The Two of Wands offers possibilities around making plans for the future. The exciting energy of fire propels you forward, but beware of becoming impatient and taking action too soon. You may need to choose between accepting a new opportunity or remaining where you are, so listen to your intuition. The one that excites you the most may be worth any associated risks. A new partnership or supportive relationship may be presenting itself to help you navigate these changes you’re experiencing. This person will help you grow in new, exciting ways."
+  },
+  "Three of Wands": {
+    "upright": "Expansion, foresight, overseas opportunities.",
+    "reversed": "Obstacles, delays, frustration, lack of vision.",
+    "General Reading": "The Three of Wands indicates that you are using your energy to work with others, delegating and sharing responsibilities that play to your strengths. There may be an element of waiting for the right opportunities to come to you, but in the meantime you are able to use your energy creatively and productively, allowing expanded prosperity to grow, with a possibility of traveling."
+  },
+  "Four of Wands": {
+    "upright": "Celebration, harmony, marriage, home, community.",
+    "reversed": "Conflict, transition, instability, delayed celebration.",
+    "General Reading": "The Four of Wands indicates an organized celebration, such as a wedding, anniversary, or graduation. Look to your own life and achievements. How can you celebrate your wins? The enthusiasm you have for your relationships and local community are also celebrated here. Make sure you are balancing your hard work and ongoing efforts with relaxation."
+  },
+  "Five of Wands": {
+    "upright": "Conflict, disagreement, competition, tension, diversity.",
+    "reversed": "Avoiding conflict, respecting differences, tension release.",
+    "General Reading": "The Five of Wands often shows up when you are steeped in conflict or disagreement and asks you to consider how you handle yourself during these situations. It can also indicate competition between qualified parties all vying for the same position, such as applying for the same job. When dealing with others who have strong opinions, know that your point of view is also important and don’t be afraid to ruffle a few feathers in your quest for a successful outcome."
+  },
+  "Six of Wands": {
+    "upright": "Victory, success, public recognition, progress, self-confidence.",
+    "reversed": "Ego, lack of recognition, fall from grace.",
+    "General Reading": "Known as the victory card, the Six of Wands brings good news, especially after a period of struggle. An important feature of this card is that it focuses on feeling proud of your accomplishments, acknowledging your success, and accepting praise from others without shame or downplaying your success. You’ve worked hard and you deserve recognition, so allow yourself to shine in this moment. Your enthusiasm has the ability to lift others up as well."
+  },
+  "Seven of Wands": {
+    "upright": "Challenge, competition, perseverance, defense.",
+    "reversed": "Giving up, overwhelmed, lack of perseverance.",
+    "General Reading": "The Seven of Wands deals with unforeseen challenges and obstacles that arise on your path, asking you to be assertive and strategic rather than acting defensive of your hard work and reputation. Being courageous in the face of adversity and listening to your intuition is the best way to handle pressure and increase your success."
+  },
+  "Eight of Wands": {
+    "upright": "Speed, action, movement, swift change.",
+    "reversed": "Delays, frustration, holding back.",
+    "General Reading": "There is an element of spontaneity in the Eight of Wands that gets you excited for an event that’s on the verge of happening. This may involve travel or a new person coming into your life. Events move quickly, and everything falls into place without you needing to push for a particular outcome. Relax and ride the wave of excitement."
+  },
+  "Nine of Wands": {
+    "upright": "Resilience, courage, persistence, test of faith.",
+    "reversed": "Exhaustion, fatigue, questioning motivation.",
+    "General Reading": "The Nine of Wands encompasses all of the events, struggles, and triumphs you’ve been dealing with up until this point. You may be exhausted and feel ready to give up—but you’re almost there! It’s time to dig deep into your reserves and push forward in the last stretch to complete your tasks. You are incredibly resilient, and you can handle any challenge that comes your way."
+  },
+  "Ten of Wands": {
+    "upright": "Burden, responsibility, hard work, stress, achievement.",
+    "reversed": "Release, delegation, avoiding responsibility, relief.",
+    "General Reading": "The Ten of Wands tells of the burdens of responsibility we carry, and it signals being completely overwhelmed by taking on too many tasks. Living at this level of action takes its toll on your body, nervous system, and emotions, leaving nothing for yourself or the people you love. Consider your motivations; why are you driving yourself so hard? Learning to ask for help or delegate responsibility frees you up to put better-quality energy into the things that light you up the most."
+  },
+  "Page of Wands": {
+    "upright": "Exploration, excitement, freedom, inspiration.",
+    "reversed": "Lack of direction, procrastination, setbacks.",
+    "General Reading": "The Page of Wands is grounded yet playful, someone who sees the world through a lens of curiosity. Good news, possibly through email, texts, phone calls, or direct conversations, is coming your way. Be open to creative experiences, new opportunities, and expressing yourself in ways that feel fresh and dynamic."
+  },
+  "Knight of Wands": {
+    "upright": "Action, adventure, impulsiveness, energy, passion.",
+    "reversed": "Haste, scattered energy, delays, recklessness.",
+    "General Reading": "The Knight of Wands indicates the time has arrived to take action on your ideas or projects. Consider this the green light to begin! Once you take the first step, notice how everything else begins to speed up to propel you in the direction you have chosen. Have confidence in yourself or in others who have come to support you. If you have been feeling blocked or stagnant, this energy comes to reignite the spark of passion and move you along the path toward your goals. Pay attention to your intuitive urges and act on them without hesitation."
+  },
+  "Queen of Wands": {
+    "upright": "Courage, determination, joy, vibrancy, confidence.",
+    "reversed": "Jealousy, selfishness, insecurity, demanding.",
+    "General Reading": "The Queen of Wands indicates an invitation to step fully into your own power, own your ambition, and allow yourself to take on leadership opportunities. As you claim your power, know that you are guided and protected now and always. Your confidence and sense of worthiness are elevated, and your reality will rise to match your energy."
+  },
+  "King of Wands": {
+    "upright": "Leadership, vision, entrepreneurship, honor.",
+    "reversed": "Impulsiveness, overbearing, ruthless, temper.",
+    "General Reading": "The King of Wands may represent a person who embodies the qualities of leadership, authority, stability, and calm in the face of adversity, or this card may be asking that you step into an authoritative role in some area of your life. By relying on your instincts with maturity and confidence, you can take decisive action with enthusiasm. Notice how you react around others who display these characteristics."
+  },
+  "Ace of Cups": {
+    "upright": "Love, new relationships, compassion, creativity.",
+    "reversed": "Blocked or repressed emotions, emptiness, disappointment.",
+    "General Reading": "When the Ace of Cups appears, the divine is offering you the love gift, which can arrive in many forms, including self-love, a new relationship, or a new connection that will bring love, peace, and happiness into your life. Be open to receiving this gift; it was meant for you!"
+  },
+  "Two of Cups": {
+    "upright": "Unified love, partnership, attraction, connection.",
+    "reversed": "Break-up, imbalance, lack of harmony.",
+    "General Reading": "The Two of Cups symbolizes shared feelings and mutual attraction. The partnership may be romantic, with both parties sharing a connection that runs deeper than mere physical desire. Whatever form this relationship takes, there is nurturing energy present and a dynamic of equal give-and-take."
+  },
+  "Three of Cups": {
+    "upright": "Friendship, celebration, community, happiness.",
+    "reversed": "Independence, isolation, overindulgence.",
+    "General Reading": "The Three of Cups urges you to have more fun, be playful, and focus on spending time with friends or family. Connecting with others is a great stress reliever and rejuvenates your spirit. Indulge in the activities that feel expansive and joyous, surrounded by people who uplift and inspire you."
+  },
+  "Four of Cups": {
+    "upright": "Meditation, contemplation, apathy, reevaluation.",
+    "reversed": "Boredom, missed opportunities, discontent.",
+    "General Reading": "It can be challenging to shift your perspective and get excited for something new when you’ve been hurt or disappointed in the past. Will the next experience just be more of the same? Will you get your hopes up for nothing? These are the types of questions posed by the Four of Cups. Like emotions, water needs to flow freely, and in this card emotional energy is stagnant. In an effort to protect yourself from experiencing pain, you’ve begun to restrict yourself from feeling anything, which leads to apathy."
+  },
+  "Five of Cups": {
+    "upright": "Loss, grief, disappointment, focusing on the negative.",
+    "reversed": "Acceptance, moving on, forgiveness, recovery.",
+    "General Reading": "The Five of Cups asks you to acknowledge your feelings of sadness and disappointment. Go ahead and cry it out! The grieving process takes time, but it will not last forever. The two standing cups will be full again as you make your way out of darkness and rediscover joy, connection, and satisfaction. There is always a way out."
+  },
+  "Six of Cups": {
+    "upright": "Revisiting the past, childhood memories, innocence.",
+    "reversed": "Stuck in the past, naivety, unrealistic expectations.",
+    "General Reading": "The Six of Cups asks you to remember when you felt safe, carefree, and playful. Spending time with children, if you have them, or reconnecting to your own inner child are great ways to connect to this card’s power. Alternately, find ways to spend time with old friends or people who feel like family. Tapping into the joy you felt as a child will help you make the most of the present moment, either by offering you support and love or by helping you reconnect with your youthful spirit."
+  },
+  "Seven of Cups": {
+    "upright": "Opportunities, choices, wishful thinking, illusion.",
+    "reversed": "Clarity, focus, making a choice, overwhelmed by options.",
+    "General Reading": "The options presented in the Seven of Cups represent dreams that have not yet materialized. Before a desire can come into form, it exists as energetic potential, as you see in the cups in this card. Which cup do you want to focus on? If you meditate and look within, your intuition will lead you toward what is most resonant as you consider all possibilities."
+  },
+  "Eight of Cups": {
+    "upright": "Disappointment, withdrawal, moving on, escapism.",
+    "reversed": "Trying one more time, avoidance, fear of change.",
+    "General Reading": "The Eight of Cups is a reminder that you do not have to settle if you sense that there is something missing in your life. You don’t need to know exactly what you are missing, though you must be willing to follow your heart and instincts toward a more meaningful existence. In order to make that journey, you will need to release things that once brought you happiness, including people, behaviors, objects, and places. This may feel distressing in the moment, but don’t let that flash of sadness trap you in a situation longer than you need to be. The inner call to action awaits you."
+  },
+  "Nine of Cups": {
+    "upright": "Contentment, satisfaction, gratitude, wish fulfillment.",
+    "reversed": "Greed, dissatisfaction, materialism, unrealistic desires.",
+    "General Reading": "The Nine of Cups asks you to relax and enjoy what you’ve worked hard to achieve, and don’t downplay your successes. You’ve come a long way, all on your own, and your abundance overflows. Savor these moments, share your good fortune with others, and your generosity will always flow back to you."
+  },
+  "Ten of Cups": {
+    "upright": "Happiness, alignment, marriage, family, emotional fulfillment.",
+    "reversed": "Strained relationships, misalignment, broken home.",
+    "General Reading": "Emotional fulfillment looks different to each individual at different stages of their life, so consider what it means for you. It may manifest as a happy family or a wonderful community that feels like a family. The Ten of Cups focuses on achievement of a level of love and success that fills your life with serenity, satisfaction, and gratitude."
+  },
+  "Page of Cups": {
+    "upright": "Creative opportunities, curiosity, possibility, intuition.",
+    "reversed": "Emotional immaturity, insecurity, disappointment.",
+    "General Reading": "The Page of Cups is grounded in his identity and feels free to express himself. This card signals emotional intelligence and messages in your life that praise you for actively expressing your feelings. The Page could represent another person, or he could be you. Regardless, open yourself to receiving messages from unexpected sources, including your own intuition."
+  },
+  "Knight of Cups": {
+    "upright": "Romantic, idealistic, chasing dreams, charm.",
+    "reversed": "Overly emotional, unrealistic expectations, moodiness.",
+    "General Reading": "Consider the motivations behind gestures, including your own actions. Are you doing something purely for recognition and attention? It is easy to get swept up in emotional experiences, such as idealizing someone or something. Slowing down will allow you to see the person or situation more clearly and enjoy the process as it unfolds."
+  },
+  "Queen of Cups": {
+    "upright": "Compassion, calm, comfort, emotional security.",
+    "reversed": "Emotional insecurity, dependence, sensitivity.",
+    "General Reading": "The Queen of Cups can represent an actual person in your life who embodies these characteristics, including yourself, but this card can also symbolize the energetic presence of intense emotions in your life. Ask yourself: Is there someone who has been influencing my emotions? Have my own emotions been trying to tell me something? When I look within, what messages do I receive about nurturing myself?"
+  },
+  "King of Cups": {
+    "upright": "Emotional balance, generosity, diplomacy, compassion.",
+    "reversed": "Emotional manipulation, moodiness, volatility.",
+    "General Reading": "The King of Cups can represent a person who embodies the qualities of empathy, compassion, and emotional intelligence and takes action to uphold their boundaries while being mindful of those around them. That person may be you! This card can also represent the energy of a situation that requires the setting of boundaries and expression of compassion."
+  },
+  "Ace of Swords": {
+    "upright": "Breakthrough, clarity, sharp mind, new ideas.",
+    "reversed": "Confusion, brutality, chaos, miscommunication.",
+    "General Reading": "When the Ace of Swords appears in a spread, it points to bright ideas, mental clarity, and the instant insight needed for swift action. It may suggest that a new or emerging idea requires immediate action to come to fruition. Diving into an important conversation or a confrontation with someone will lead to a much better outcome. This Ace represents the first exciting step in a process. Trust your intuition to guide you toward the next action steps. This is an encouraging sign!"
+  },
+  "Two of Swords": {
+    "upright": "Difficult choices, indecision, stalemate, blocked emotions.",
+    "reversed": "Lesser evil, no choice, confusion, indecision lifted.",
+    "General Reading": "Finding yourself in a place of indecision is just as painful as the fear you experience by choosing inaction. Fear of making the wrong choice will paralyze you, keeping you stuck in a holding pattern. Reaching out and asking for advice and support will help ease your mind, but ultimately, listening to your own intuition and taking action on your own will provide the relief you seek."
+  },
+  "Three of Swords": {
+    "upright": "Heartbreak, emotional pain, sorrow, grief, rejection.",
+    "reversed": "Releasing pain, optimism, forgiveness, moving on.",
+    "General Reading": "In the Three of Swords, you are given an opportunity to embrace and acknowledge heartbreaking truths and the pain surrounding them. This may be related to a current situation or something in your past that is impacting your present circumstances. If you open your heart and mind, your intuition will guide you toward the meaning of the Three of Swords. Accept your emotions with compassion, and take this opportunity to release and heal. Everything that exits your life creates space for something better suited to your current path."
+  },
+  "Four of Swords": {
+    "upright": "Rest, recovery, contemplation, passivity, relaxation.",
+    "reversed": "Restlessness, burnout, stress, self-examination.",
+    "General Reading": "The Four of Swords is the recovery period in the journey of the Swords. It asks you to relax, calm your mind, and engage in introspection. If you feel stressed or anxious, meditation and sleep are encouraged. Letting yourself rest creates space within your mind to receive ideas and intuitive messages that lead to solutions. During this time, you can also focus on self-reflection, breath work, and other modalities that calm the nervous system."
+  },
+  "Five of Swords": {
+    "upright": "Conflict, disagreements, competition, defeat, winning at all costs.",
+    "reversed": "Resolution, compromise, past resentment, reconciliation.",
+    "General Reading": "The Five of Swords teaches you that conflict, arguments, and quarreling are a natural element of all relationships, but how you manage yourself during these moments will help you evolve. Start by understanding your triggers. Is it really that important to have the last word? What might these power struggles be trying to teach you? Other times, it’s best to know when to walk away from a hostile situation."
+  },
+  "Six of Swords": {
+    "upright": "Transition, change, rite of passage, moving on.",
+    "reversed": "Resistance to change, unfinished business, unresolved issues.",
+    "General Reading": "The Six of Swords offers a welcome reprieve from conflict, asking you to guide yourself toward release, both mentally and emotionally. This card can be interpreted literally or figuratively, since the action of a healing journey may take place within you or may be tied to a physical journey undertaken to give yourself distance and space. If this card does signal travel, the trip you take will be beneficial for you and an important element of your healing journey."
+  },
+  "Seven of Swords": {
+    "upright": "Betrayal, deception, getting away with something, strategy.",
+    "reversed": "Coming clean, rethinking approach, deception exposed.",
+    "General Reading": "The Seven of Swords warns of possible deception and lying. Either someone is being dishonest with you, or you may be lying to yourself about something. This card can also represent a strategy or manipulation tactic you’re using to get something you want rather than being open and up-front about your needs. There is always an opportunity to reframe the situation with honesty and frank communication, as suggested by the two remaining swords. So ask yourself what is the Seven of Swords asking you to confront?"
+  },
+  "Eight of Swords": {
+    "upright": "Isolation, self-imposed restriction, imprisonment, victim mentality.",
+    "reversed": "Release, freedom, new perspective, open options.",
+    "General Reading": "The Eight of Swords indicates you’re feeling trapped or stuck, either by circumstances, the past, or your own internal fears of uncertainty. Feelings of separateness, not fitting in, and being unable to express yourself freely are also indicated. You may find yourself making excuses for why you can’t move forward or holding everything inside, feeling powerless to spark change. Since the way forward begins when you reclaim your power, start by taking small steps toward your true desires. Have faith and be patient with yourself. This process takes patience and perseverance, but you can do it!"
+  },
+  "Nine of Swords": {
+    "upright": "Anxiety, worry, fear, depression, nightmares.",
+    "reversed": "Inner turmoil, releasing worry, facing fears, recovery.",
+    "General Reading": "The Nine of Swords is telling you that your anxiety is preventing you from seeing the reality that is in front of you. Stress is a normal part of life, but how you manage it is up to you. If you allow your worries to affect your health and wellness, it is time to make some changes. Implement healthy skills and coping strategies, and seek help if you are struggling. Journaling can help put your thoughts into words and gets them out of your head and onto the page. Fortunately, this negatively charged and counterproductive energy is temporary and will pass."
+  },
+  "Ten of Swords": {
+    "upright": "Painful endings, betrayal, loss, crisis, hitting rock bottom.",
+    "reversed": "Recovery, regeneration, resisting an inevitable end.",
+    "General Reading": "The Ten of Swords signifies the end of a cycle of pain and struggle. Transformation occurs when you accept this ending and allow yourself to see that everything you’ve experienced has served its purpose. This level of surrender creates a feeling of peace and gratitude for what has left your life, creating space for a new cycle to begin."
+  },
+  "Page of Swords": {
+    "upright": "New ideas, curiosity, thirst for knowledge, communication.",
+    "reversed": "All talk no action, deception, manipulation, restless energy, gossip.",
+    "General Reading": "The Page of Swords is grounded enough to know he must practice before leaping into conflict. This energy is urging you to pay attention to the subtle messages surrounding you, urging you to move forward but with measured caution. Communication, fresh perspectives, and opportunities to engage your mind surround you right now. You may be feeling apprehensive, but something is begging you to follow your enthusiasm. Creating a solid plan before you begin will help boost your confidence."
+  },
+  "Knight of Swords": {
+    "upright": "Ambitious, action-oriented, driven, quick-thinking.",
+    "reversed": "Recklessness, impatience, scattered energy, unpredictability.",
+    "General Reading": "The Knight of Swords may represent a situation that must be dealt with head-on, indicating that confrontation cannot be avoided. Perhaps it is asking you to be more assertive or to focus on your goals with all of your available energy. This card may also point toward a person in your life who is trying to engage you in their drama. Your intuition will guide you toward who or what this swiftly moving energy represents in your life."
+  },
+  "Queen of Swords": {
+    "upright": "Independent, unbiased judgment, clear boundaries, direct communication.",
+    "reversed": "Cold-hearted, bitter, manipulative, emotional distance.",
+    "General Reading": "The Queen of Swords can represent an actual person who embodies these characteristics, including yourself, or the energetic presence of intellect and wisdom in your life, particularly as it relates to decision-making. This card asks you to approach complex situations by formulating a logical response instead of an emotional reaction. Use your intuition to guide you toward who or what this card represents in your own life."
+  },
+  "King of Swords": {
+    "upright": "Mental clarity, intellectual power, authority, truth.",
+    "reversed": "Manipulative, abusive, cruel, misuse of power.",
+    "General Reading": "The King of Swords can represent you or another person who embodies the qualities of authority, intelligence, and use of logic to attain success. It can also represent the energy of a situation requiring you to take decisive action on your own behalf or to stand up for others who may not have the power to defend themselves. Listen to your intuition for messages that can guide you when it’s time to take action. You are a powerful authority who wields substantial intelligence. Trust your voice."
+  },
+  "Ace of Pentacles": {
+    "upright": "Opportunity, prosperity, new venture, manifestation.",
+    "reversed": "Missed opportunity, lack of planning, delays.",
+    "General Reading": "The Ace of Pentacles signifies an opportunity or gift from the universe in the material realm. That may come as a new job or unexpected sum of money. Since this card is about beginnings, it could also indicate that you’re taking the first steps toward increasing prosperity and cultivating greater abundance for yourself. This change has unlimited growth potential, so grab ahold and see where it takes you!"
+  },
+  "Two of Pentacles": {
+    "upright": "Balance, adaptability, time management, priorities.",
+    "reversed": "Overwhelm, disorganization, financial imbalance.",
+    "General Reading": "Balancing your schedule and personal obligations can be tricky. The Two of Pentacles asks you to flow with your emotions rather than allowing them to wash over you and knock you off balance. Anytime you strive to take your life to the next level, your routine and comfort zone will be momentarily disrupted. This is a normal part of expansion, but to leverage it in a healthy way, you will need to take a moderate approach."
+  },
+  "Three of Pentacles": {
+    "upright": "Teamwork, collaboration, learning, implementation.",
+    "reversed": "Lack of teamwork, disorganized efforts, group conflict.",
+    "General Reading": "The Three of Pentacles asks you to share your ideas with confidence and accept projects and work that stoke your passions. Your work will not only be well-received by others, it will position you to open new doors of opportunity. This is the next level of prosperity you have been waiting for, so do not doubt your abilities and skills. You have what it takes to build the prosperous future of your dreams."
+  },
+  "Four of Pentacles": {
+    "upright": "Conservation, security, frugality, control.",
+    "reversed": "Greed, materialism, over-spending, possession issues.",
+    "General Reading": "Feeling financially stable is a concern for everyone, and once you’ve achieved some level of comfort it’s easy to focus on maintaining what you’ve got and lose sight of potential growth. The Four of Pentacles asks you to affirm that you are stable and safe, and remember that you will always have what you need. Conserve what you’ve earned without closing yourself off to new paths to abundance. You have or are in the process of establishing stability for yourself, so give yourself some credit for your hard work."
+  },
+  "Five of Pentacles": {
+    "upright": "Financial loss, poverty, insecurity, isolation.",
+    "reversed": "Recovery from loss, spiritual poverty, improving situation.",
+    "General Reading": "The Five of Pentacles indicates feelings of lack and loss, and fear of scarcity. These emotions may have been caused by a job loss or some set of circumstances leading to a lack of resources. When you focus on what you lack, it can be difficult to see that assistance is close at hand. When you move from a mindset of needing to “see it to believe it” to one of “believing it before seeing it,” abundance is created within you. Your feelings of worthiness combined with faith in the divine can lift you out of any period of loss."
+  },
+  "Six of Pentacles": {
+    "upright": "Giving, receiving, generosity, charity, balance.",
+    "reversed": "Debt, selfishness, one-sided charity, strings attached.",
+    "General Reading": "The Six of Pentacles asks what is your relationship to giving and receiving? Giving offers its own reward in the good feelings that flow from being generous. Receiving can sometimes leave you feeling unworthy or undeserving, especially when you do not have anything to offer in return. Don’t feel obligated to give back to the same source you’ve received from, since they are already satisfied with the act of giving. Instead, remember these moments of kindness, and give to others when an opportunity arises. The more comfortable you become with receiving, the more abundance will flow into your life."
+  },
+  "Seven of Pentacles": {
+    "upright": "Patience, assessment, reward, long-term view.",
+    "reversed": "Lack of long-term vision, limited success, impatience.",
+    "General Reading": "You are so close to reaching your goal! Alas, it isn’t time to celebrate quite yet. When you pause and look at your progress, do so with gratitude rather than frustration. You’re being asked to remember that the journey toward achievement is an adventure, not a destination. How can you enjoy the work you’re doing even more? Trust that when the time is right, the fruits of your labor will be perfectly ripe and celebration will be in order."
+  },
+  "Eight of Pentacles": {
+    "upright": "Apprenticeship, repetitive tasks, mastery, skill development.",
+    "reversed": "Mediocrity, lack of focus, perfectionism, boredom.",
+    "General Reading": "The Eight of Pentacles reminds you that when you do what you love, you will love what you do. Financial success and security are the product of your hard work and dedication, and the level of your success is up to you! If you've been working hard to learn something new or advance within your current field, your efforts will not go unnoticed. Keep up the great work!"
+  },
+  "Nine of Pentacles": {
+    "upright": "Abundance, luxury, self-sufficiency, financial independence.",
+    "reversed": "Overindulgence, financial setbacks, dependence.",
+    "General Reading": "The Nine of Pentacles symbolizes a time of enjoyment and feeling safe. You've worked hard, made intelligent choices with your money, and invested wisely. You also value charity and generosity, making sure to share your abundance with others. It's time to enjoy the world you've cultivated for yourself so meticulusly. There is no need to worry about scarcity, since you have everything you require. Go ahead and take a vacation or buy yourself something meaningful; you've earned it."
+  },
+  "Ten of Pentacles": {
+    "upright": "Wealth, inheritance, family, long-term success, stability.",
+    "reversed": "Financial failure, family disputes, instability.",
+    "General Reading": "The Ten of Pentacles represents love within the family that is most supportive in your life, though that may not be your family of origin. Focus on spending time with the people you love and creating a network of prosperity that will give generously to those in need. This may be an inheritance for you, or may mean that you are beginning to set aside funds that will benefit your children, your aging relatives or a partner. Enjoy the present while planning for this prosperous future."
+  },
+  "Page of Pentacles": {
+    "upright": "Manifestation, financial opportunity, skill development.",
+    "reversed": "Lack of progress, short-term focus, procrastination.",
+    "General Reading": "The Page of Pentacles may be a novice or someone working to establish himself in a new place or a new profession. This card may represent working at the beginning stages of a project or starting down a new path. What you are working toward is grounded in reality and can grow into lasting abundance with focus and steady effort. Be open to receiving messages from a variety of sources, especially your own intuition."
+  },
+  "Knight of Pentacles": {
+    "upright": "Hard work, responsibility, productivity, routine.",
+    "reversed": "Workaholism, laziness, stagnation, perfectionism.",
+    "General Reading": "The Knight of Pentacles isn't impressed by get-rich-quick schemes or lazy shortcuts. He understands that putting in solid effort daily will yield the most lasting and meaningful results. This is true for your mundane daily tasks as well. Showing up fully and enthusiastically in all areas of your life, not just for things you are passionate about, creates abundance in many ways. Set goals and take realistic action steps to avoid burnout, and your routine will transform into a successful daily practice."
+  },
+  "Queen of Pentacles": {
+    "upright": "Nurturing, practicality, financial security, domesticity.",
+    "reversed": "Self-centeredness, financial dependence, imbalance.",
+    "General Reading": "The Queen of Pentacles can represent a person who embodies these characteristics, including yourself, or the presence of dependable, nurturing energy in your life. Ask yourself questions about the quality of supportive people in your life, your relationship with your body, and how you can connect with nature to feel abundant."
+  },
+  "King of Pentacles": {
+    "upright": "Wealth, business acumen, security, discipline.",
+    "reversed": "Greed, corruption, immaturity, instability.",
+    "General Reading": "The King of Pentacles can represent a person with financial stability, generosity and drive. That person may be you! It can also represent the energy of a situation requiring you to take a leadership role, make financial decisions on behalf of others, or take action reaching a goal. It may require you to use your resources for the benefit of others."
+  }
+}
