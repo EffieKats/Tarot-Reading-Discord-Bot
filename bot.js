@@ -74,7 +74,8 @@ client.on("messageCreate", async (msg) => {
       const orientation = c.reversed ? "🔄 Reversed" : "✨ Upright";
 
       return new EmbedBuilder()
-        .setTitle(`${getCardEmoji(c.name)} ${c.name} — ${orientation}`)
+        const cleanName = c.name.replace(/[-–—]\s*reversed/i, "").trim();
+        .setTitle(`${getCardEmoji(cleanName)} ${cleanName} — ${orientation}`)
         .setDescription(
           `**Upright Meaning:** ${uprightMeaning}\n\n` +
           `**Reversed Meaning:** ${reversedMeaning}\n\n` +
