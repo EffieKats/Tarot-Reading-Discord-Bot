@@ -70,11 +70,14 @@ client.on("messageCreate", async (msg) => {
         .setTitle(`${getCardEmoji(c.name)} ${c.name}${c.reversed ? " 🔄 Reversed" : ""}`)
         .setDescription(
           c.reversed
-            ? `**Reversed Meaning:** ${c.meaning_rev}\n\n**General Reading:** ${c.general_reading}`
-            : `**Upright Meaning:** ${c.meaning_up}\n\n**General Reading:** ${c.general_reading}`
-        )
-        .setColor(0x8a2be2)
-        .setFooter({ text: "🔮 Tarot Reading" })
+            ? tarotData[c.name]?.reversed || "Reversed Meaning: not found."
+            : tarotData[c.name]?.upright || "Upright Meaning: not found."
+)
+.addFields({
+  name: "General Reading",
+  value: tarotData[c.name]?.["General Reading"] || "General Reading: not found.",
+})
+.setFooter({ text: "🔮 Tarot Reading" })
     );
 
     await msg.channel.send({
