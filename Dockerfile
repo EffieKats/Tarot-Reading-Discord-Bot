@@ -1,18 +1,20 @@
-# Use Node.js LTS version
-FROM node:20
+# Use official Node.js LTS image (lightweight Alpine version)
+FROM node:20-alpine
 
-# Set working directory
+# Create and set working directory
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Copy package files first (for better caching)
 COPY package*.json ./
-RUN npm install
 
-# Copy all files
+# Install dependencies
+RUN npm install --omit=dev
+
+# Copy all other source files
 COPY . .
 
-# Expose port if needed (for Koyeb, optional)
-EXPOSE 3000
+# Expose port (Koyeb uses dynamic PORT environment variable)
+EXPOSE 8080
 
-# Run the bot
+# Start the bot
 CMD ["npm", "start"]
